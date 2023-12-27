@@ -699,8 +699,8 @@ video {
   margin-left: 3.5rem;
 }
 
-.ms-24 {
-  margin-inline-start: 6rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 
 .mt-1 {
@@ -1628,7 +1628,7 @@ video {
 body {
   font-family: "Inter" sans-serif !important;
   color: #707070 !important;
-  background: #F6FCFC !important;
+  background: #F6FCFC;
 }
 
 .bg-image {
@@ -1761,6 +1761,39 @@ body {
   line-height: 3.8rem !important;
   letter-spacing: 1px !important;
 }
+
+/* dropdown-menu */
+
+.dropdown-menu {
+  bottom: -150px;
+  left: -10px;
+  width: 150px;
+  height: 130px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transition: 0.6s ease-in-out !important;
+}
+
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+} */
+
+/* nav.sticky {
+    top: 0;
+    z-index: 10;
+} */
+
+.logo-sticky {
+  display: none;
+  transition: 0.4 ease;
+}
+
+/* nav.sticky .logo-sticky {
+    display: block;
+} */
 
 .placeholder\:font-karla::-moz-placeholder {
   font-family: Karla, sans-serif;
