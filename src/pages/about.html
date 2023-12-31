@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEL || About Us</title>
+
+
+    <!-- swiper css file import  -->
+    <link rel="stylesheet" href="../elements/swiper-js/swiper.css">
+
+    <!-- font awesome icons css  -->
+    <link rel="stylesheet" href="../elements/fontawesome/css/all.min.css">
+
+    <!-- output or main css  -->
+    <link rel="stylesheet" href="../../dist/output.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+        Cursor animation
+    ==========================================  -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+
+    <!-- =========================================
+         Navbar Area Start
+        ==========================================  -->
+    <div class="bg-[#1FBEF9]  sticky top-0 z-10">
+        <div class="container mx-auto px-5 md:px-10">
+            <nav class="w-full flex justify-between items-center h-[60px]">
+
+                <!-- Menu for large device  -->
+                <div class="hidden lg:block">
+                    <div>
+                        <ul class="flex items-center gap-10">
+                            <li class="lg:hidden">
+                                <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                                    <span
+                                        class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                                stroke="#1FBEF9" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                                        type="search" placeholder="Find services"
+                                        style="background-color: transparent;" />
+                                </div>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="news.html">News</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="sister-concern.html">Sister Concern</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Menu for small device  -->
+                <div class="lg:hidden block">
+                    <div>
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 14.5V16.167C19.9969 16.387 19.9082 16.5971 19.7526 16.7526C19.5971 16.9082 19.387 16.9969 19.167 17H0.833049C0.723675 17.0011 0.615243 16.9798 0.514452 16.9373C0.413661 16.8948 0.322652 16.8321 0.247049 16.753C0.167882 16.6773 0.105109 16.5862 0.0626208 16.4852C0.020133 16.3842 -0.00116424 16.2756 4.9074e-05 16.166V14.5C-0.001027 14.3907 0.0203368 14.2822 0.0628205 14.1814C0.105304 14.0807 0.168005 13.9896 0.247049 13.914C0.322652 13.835 0.413661 13.7723 0.514452 13.7298C0.615243 13.6873 0.723675 13.666 0.833049 13.667H19.167C19.387 13.6701 19.5971 13.7589 19.7526 13.9145C19.9082 14.07 19.9969 14.2801 20 14.5ZM20 7.83305V9.50005C19.9969 9.72001 19.9082 9.93009 19.7526 10.0856C19.5971 10.2412 19.387 10.3299 19.167 10.333H0.833049C0.723675 10.3341 0.615243 10.3128 0.514452 10.2703C0.413661 10.2278 0.322652 10.1651 0.247049 10.086C0.168005 10.0104 0.105304 9.91944 0.0628205 9.81864C0.0203368 9.71785 -0.001027 9.60942 4.9074e-05 9.50005V7.83305C-0.001027 7.72367 0.0203368 7.61524 0.0628205 7.51445C0.105304 7.41366 0.168005 7.32265 0.247049 7.24705C0.322652 7.168 0.413661 7.1053 0.514452 7.06282C0.615243 7.02033 0.723675 6.99897 0.833049 7.00005H19.167C19.387 7.00315 19.5971 7.09191 19.7526 7.24746C19.9082 7.40301 19.9969 7.61309 20 7.83305ZM20 1.16605V2.83305C20.0011 2.94242 19.9798 3.05085 19.9373 3.15164C19.8948 3.25243 19.8321 3.34344 19.753 3.41905C19.6774 3.49809 19.5864 3.56079 19.4856 3.60328C19.3849 3.64576 19.2764 3.66712 19.167 3.66605H0.833049C0.723675 3.66712 0.615243 3.64576 0.514452 3.60328C0.413661 3.56079 0.322652 3.49809 0.247049 3.41905C0.168005 3.34344 0.105304 3.25243 0.0628205 3.15164C0.0203368 3.05085 -0.001027 2.94242 4.9074e-05 2.83305V1.16605C-0.001027 1.05667 0.0203368 0.948241 0.0628205 0.847449C0.105304 0.746658 0.168005 0.655649 0.247049 0.580047C0.322652 0.501003 0.413661 0.438302 0.514452 0.395818C0.615243 0.353334 0.723675 0.33197 0.833049 0.333047H19.167C19.2764 0.33197 19.3849 0.353334 19.4856 0.395818C19.5864 0.438302 19.6774 0.501003 19.753 0.580047C19.8321 0.655649 19.8948 0.746658 19.9373 0.847449C19.9798 0.948241 20.0011 1.05667 20 1.16605Z"
+                                fill="white" />
+                        </svg>
+                        <ul>
+                            <li class="lg:hidden">
+                                <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                                    <span
+                                        class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                                stroke="#1FBEF9" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                                        type="search" placeholder="Find services"
+                                        style="background-color: transparent;" />
+                                </div>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="news.html">News</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="sister-concern.html">Sister Concern</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- search bar  -->
+                <div class="hidden lg:block">
+                    <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                        <span
+                            class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                    stroke="#1FBEF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <input
+                            class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                            type="search" placeholder="Find services" style="background-color: transparent;" />
+                    </div>
+                </div>
+
+                <!-- logo  -->
+                <div class="lg:hidden block">
+                    <div>
+                        <h2 class="text-2xl md:text-primary text-white font-bold">Power Grid</h2>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- =========================================
+                 Navbar Area End
+                ==========================================  -->
+
+
+    <!-- =========================================
+             Main Area Start
+            ==========================================  -->
+    <main>
+
+
+        <!-- =========================================
+             Banner Area Start
+            ==========================================  -->
+        <div style='background: url("../img/banner/about-bg.jpg");'
+            class="min-h-[80vh] flex justify-center items-center bg-no-repeat bg-cover bg-center">
+            <div class="text-center md:w-1/2 w-full text-white mx-auto">
+                <h2 class="font-bold font-karla lg:text-5xl md:text-3xl text-2xl mb-2">
+                    About Us
+                </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since</p>
+            </div>
+        </div>
+        <!-- =========================================
+             Banner Area End
+            ==========================================  -->
+
+
+
+        <!-- =========================================
+                 Hero Area Start
+                ==========================================  -->
+        <div class="lg:py-24 py-10">
+            <div class="container mx-auto md:px-10 px-5">
+                <div class="grid lg:grid-cols-2 items-center flex-col md:flex-row gap-10">
+                    <div>
+                        <h2
+                            class="lg:text-5xl md:text-3xl text-2xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow mb-7">
+                            About Our Company
+                        </h2>
+                        <p class="text-[#2D2C2C] leading-8">
+                            Eclipse Engineering Ltd. (EEL) is an independent Trading, engineering & consulting company
+                            operating across Bangladesh since 2017 with headquarters in Dhaka. We have maintained our
+                            independence by ensuring we have no financial ties with suppliers or installers. Our
+                            services are tailor made to meet the requirements for every engineering, construction &
+                            built in project we take on. Our focus on quality, reliability and innovation has helped us
+                            to ensure that our client base has grown steadily since we started and is the reason why our
+                            existing customers have continued to use our knowledge and services since the very first
+                            time they tried us.
+
+                        </p>
+                        <p class="text-[#2D2C2C] leading-8">
+                            To maintain the high quality standards and knowledge of our organization, investments are
+                            often made in advanced skill based courses and health & safety training for our employees.
+                            We also open up some of these sessions to our partners and trusted contractors in an effort
+                            to ensure our network also remain highly skilled.
+                        </p>
+                        <p class="text-[#2D2C2C] leading-8">
+                            We keep a small team of core employees at EEL, however we have the ability to expand in
+                            numbers and expertise at short notice to fit the needs of individual projects
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-2 gap-5">
+                        <div
+                            class="h-[380px] w-full col-span-2 rounded sm:hidden block bg-gray relative overflow-hidden">
+                            <img src="../img/home/bernd-dittrich-eCc7FjMoR74-unsplash.jpg"
+                                class="object-cover h-full w-full" alt="power plant image">
+                        </div>
+                        <div class=" h-[180px] w-full  rounded bg-gray relative overflow-hidden">
+                            <img src="../img/home/boukaih-bGMyTnSlYvE-unsplash.jpg" class="object-cover h-full w-full"
+                                alt="logistic transport image">
+                        </div>
+                        <div
+                            class="h-[380px] w-full row-span-2 rounded hidden sm:block bg-gray relative overflow-hidden">
+                            <img src="../img/home/chuttersnap-eqwFWHfQipg-unsplash.jpg"
+                                class="object-cover h-full w-full" alt="power plant image">
+                        </div>
+                        <div class=" h-[180px] w-full rounded bg-gray relative overflow-hidden">
+                            <img src="../img/home/construction-workers-sunset.jpg" class="object-cover h-full w-full"
+                                alt="turbine">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================
+                     Hero Area End
+                    ==========================================  -->
+
+
+
+        <!-- =========================================
+                 Our Vision Area Start
+                ==========================================  -->
+        <div class="lg:py-24 py-10 bg-secondary">
+            <div class="container mx-auto md:px-10 px-5">
+                <div class="flex lg:justify-between lg:flex-row flex-col  items-center  lg:gap-40 gap-10">
+                    <div class="lg:w-1/2 w-full">
+                        <h2 class="text-primary font-bold text-2xl mb-5">
+                            We Have Been Certified & Trusted By More Than 50+ Clients
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+                            ipsum iusto vitae eius inventore tempora eaque cumque voluptatibus
+                            dicta dolores.
+                        </p>
+                    </div>
+
+
+
+                    <div class="grid grid-cols-2 md:gap-10 lg:w-1/2 gap-5 w-full">
+
+                        <div class="h-[200px] rounded bg-gray overflow-hidden">
+                            <img src="../img/home/industrial-port-container-yard.jpg" class="object-cover h-full"
+                                alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-primary text-xl font-bold mb-5">Our Vision</h2>
+                            <p class="mb-5">Where others focus on one star – one difficulty — we view the entire sky,
+                                according to a client. Emerging patterns — the constellation of interests — are
+                                discovered. We create a plan based on this vision that makes sense of complexity and
+                                illuminates a fresh path for pursuing your objective.</p>
+
+                            <button
+                                class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-primary text-white">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================
+                     Our Vision Area End
+                    ==========================================  -->
+
+
+
+
+
+        <!-- =========================================
+                 Our Mission Area Start
+                ==========================================  -->
+        <div class="lg:py-24 py-10">
+            <div class="container mx-auto md:px-10 px-5">
+                <div class="flex lg:justify-between lg:flex-row flex-col items-center  lg:gap-40 gap-10">
+                    <div class="lg:w-1/2 w-full">
+                        <h2 class="text-primary font-bold text-xl mb-5 flex items-center gap-5">
+                            <span class="bg-primary text-white p-3 text-xl rounded-full ">
+                                <svg width="18" height="18" viewBox="0 0 30 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.23291 10.22L11.09 19.0771L27.6419 2.52515" stroke="white"
+                                        stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            Qualified IT Experts
+                        </h2>
+                        <div class="flex justify-between items-center mt-10">
+                            <div>
+                                <span class="text-primary font-bold text-3xl">10k++</span>
+                                <p>Subscriber</p>
+                            </div>
+                            <div>
+                                <span class="text-primary font-bold text-3xl">50++</span>
+                                <p>Client</p>
+                            </div>
+                            <div>
+                                <span class="text-primary font-bold text-3xl">98%</span>
+                                <p>Success</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 md:gap-10 lg:w-1/2 gap-5 w-full">
+
+                        <div class="h-[200px] rounded bg-gray overflow-hidden">
+                            <img src="../img/home/james-sullivan-ESZRBtkQ_f8-unsplash.jpg"
+                                class="object-cover h-full w-full" alt="">
+                        </div>
+                        <div>
+                            <h2 class="text-primary text-xl font-bold mb-5">Our Mission</h2>
+                            <p class="mb-5">We think that multi-tiered collaboration across industries is the most
+                                effective way to address global issues. Even when parties appear to have opposing aims,
+                                thorough discussion can find a beneficial area of agreement and grounds for
+                                collaboration, in our experience.</p>
+
+                            <button
+                                class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-primary text-white">
+                                Read More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================
+                     Our Mission Area End
+                    ==========================================  -->
+
+
+
+        <!-- =========================================
+                 Our Company History Area Start
+                ==========================================  -->
+        <div class="lg:py-24 py-10 bg-secondary">
+            <div class="container mx-auto md:px-10 px-5">
+
+                <div class="my-5 text-center mb-10">
+                    <h2 class="md:text-3xl text-xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow">
+                        Our Company History
+                    </h2>
+                    <div class="h-[2px] mx-auto my-3 w-[150px] bg-gray"></div>
+                </div>
+
+                <div class="text-center">
+                    <p class="">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus,
+                        ducimus dignissimos. Doloremque omnis, culpa quae blanditiis at hic
+                        nam velit et impedit nostrum laudantium sunt itaque maxime accusantium
+                        recusandae ut atque, aliquam amet id voluptatem sint perspiciatis.
+                        Natus, suscipit omnis.
+                    </p>
+
+                    <br />
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ipsa
+                        omnis beatae ratione, illum accusamus non voluptatem, distinctio
+                        recusandae dignissimos blanditiis dolor libero fugiat voluptas eos qui
+                        eum tempore quos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================
+                     Our Company History Area End
+                    ==========================================  -->
+
+
+
+
+
+
+        <!-- =========================================
+                 Achievement Area Start
+                ==========================================  -->
+        <div class="lg:py-24 py-10">
+            <div class="container mx-auto md:px-10 px-5">
+                <div class="flex lg:justify-between lg:flex-row flex-col items-start lg:gap-20 gap-10">
+                    <div class="lg:w-[45%] lg:px-10 w-full">
+                        <div class="h-[500px] w-full relative rounded-md bg-gray overflow-hidden">
+                            <span
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 border border-[#FFFBFB] p-4 bg-body bg-opacity-10 rounded-full text-white cursor-pointer text-xl">
+                                <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.7351 23.1192C1.48925 23.1192 1.25346 23.0215 1.07962 22.8477C0.90577 22.6738 0.808105 22.438 0.808105 22.1922V1.80818C0.80822 1.64721 0.850246 1.48905 0.930046 1.34926C1.00985 1.20947 1.12467 1.09287 1.26322 1.01093C1.40177 0.928992 1.55926 0.884542 1.72021 0.881956C1.88115 0.879369 2.04 0.918734 2.18111 0.996177L20.7081 11.1892C20.8532 11.2693 20.9741 11.3868 21.0583 11.5295C21.1426 11.6723 21.187 11.835 21.187 12.0007C21.187 12.1664 21.1426 12.3291 21.0583 12.4718C20.9741 12.6145 20.8532 12.7321 20.7081 12.8122L2.18111 23.0042C2.0445 23.0795 1.89108 23.119 1.7351 23.1192Z"
+                                        fill="white" />
+                                </svg>
+                            </span>
+
+                            <img src="../img/home/patrick-federi-RjewO7Oqcv8-unsplash.jpg"
+                                class="object-cover w-full h-full" alt="">
+                        </div>
+                    </div>
+
+                    <div class="lg:w-[55%] lg:px-10 w-full grid">
+                        <h2 class="text-primary font-bold text-2xl mb-5">
+                            We Have Several Achievement In Engineering Sector
+                        </h2>
+                        <p class="lg:mt-10">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
+                            ipsum iusto vitae eius inventore tempora eaque cumque voluptatibus
+                            dicta dolores.
+                        </p>
+
+                        <div
+                            class="bg-secondary rounded-md w-full p-10 flex justify-between sm:flex-row flex-col items-start lg:mt-20 mt-10 gap-3">
+                            <div>
+                                <span class="flex gap-2 items-center text-primary text-lg font-bold mb-5">
+                                    <svg width="20" height="30" viewBox="0 0 42 56" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.0371 39.564C10.1121 38.639 10.5941 38.9 8.3631 38.303C7.37489 38.0165 6.45434 37.5343 5.6561 36.885L0.826101 48.726C0.718093 48.9897 0.678084 49.2763 0.709752 49.5594C0.741421 49.8426 0.843749 50.1132 1.00733 50.3465C1.17092 50.5798 1.39052 50.7682 1.64594 50.8945C1.90136 51.0207 2.18442 51.0807 2.4691 51.069L8.0781 50.855L11.9361 54.93C12.1316 55.1374 12.376 55.2924 12.647 55.3806C12.918 55.4689 13.2068 55.4875 13.4869 55.435C13.767 55.3824 14.0294 55.2602 14.25 55.0797C14.4705 54.8992 14.6422 54.6662 14.7491 54.402L20.2891 40.819C18.8251 41.6626 17.1228 41.997 15.4485 41.7699C13.7742 41.5428 12.2235 40.7671 11.0371 39.564ZM41.4481 48.726L36.6181 36.884C35.8201 37.5336 34.8995 38.0159 33.9111 38.302C31.6681 38.902 32.1601 38.641 31.2371 39.563C30.0505 40.766 28.4986 41.5417 26.8241 41.7688C25.1497 41.9959 23.4473 41.6615 21.9831 40.818L27.5241 54.403C27.631 54.6672 27.8027 54.9002 28.0232 55.0807C28.2438 55.2612 28.5062 55.3834 28.7863 55.436C29.0664 55.4885 29.3552 55.4699 29.6262 55.3816C29.8972 55.2934 30.1416 55.1384 30.3371 54.931L34.2001 50.857L39.8001 51.069C40.0851 51.0814 40.3687 51.0219 40.6246 50.896C40.8806 50.77 41.1008 50.5817 41.2648 50.3483C41.4289 50.1149 41.5316 49.844 41.5634 49.5605C41.5953 49.277 41.5563 48.99 41.4481 48.726ZM28.6951 37.155C30.3221 35.5 30.5081 35.642 32.8241 35.011C33.5556 34.808 34.2207 34.416 34.7528 33.8745C35.2848 33.333 35.665 32.661 35.8551 31.926C36.6551 28.903 36.4451 29.268 38.6171 27.056C39.1504 26.5096 39.5329 25.8342 39.7273 25.0958C39.9217 24.3574 39.9212 23.5812 39.7261 22.843C38.9261 19.822 38.9261 20.243 39.7261 17.219C39.9212 16.4808 39.9217 15.7047 39.7273 14.9663C39.5329 14.2279 39.1504 13.5525 38.6171 13.006C36.4441 10.794 36.6511 11.158 35.8551 8.13603C35.665 7.40108 35.2848 6.7291 34.7528 6.18758C34.2207 5.64607 33.5556 5.25409 32.8241 5.05103C29.8561 4.24103 30.2141 4.45103 28.0391 2.24003C27.5123 1.70024 26.8509 1.31091 26.1232 1.11225C25.3956 0.913598 24.6281 0.912832 23.9001 1.11003C20.9331 1.91903 21.3471 1.92003 18.3751 1.11003C17.647 0.912198 16.8793 0.912547 16.1514 1.11105C15.4235 1.30954 14.7619 1.69898 14.2351 2.23903C12.0621 4.45103 12.4201 4.23903 9.4511 5.05003C8.71962 5.25309 8.05445 5.64507 7.52242 6.18658C6.99038 6.7281 6.61021 7.40008 6.4201 8.13503C5.6201 11.157 5.8301 10.793 3.6581 13.005C3.1242 13.5513 2.74124 14.2268 2.54667 14.9655C2.3521 15.7041 2.3526 16.4806 2.5481 17.219C3.3481 20.238 3.3481 19.819 2.5481 22.842C2.35307 23.5804 2.35272 24.3567 2.54708 25.0952C2.74144 25.8338 3.12388 26.5093 3.6571 27.056C5.8301 29.269 5.6241 28.903 6.4201 31.926C6.61021 32.661 6.99038 33.333 7.52242 33.8745C8.05445 34.416 8.71962 34.808 9.4511 35.011C11.8331 35.66 12.0111 35.558 13.5791 37.155C14.2567 37.8501 15.1526 38.291 16.1167 38.4039C17.0807 38.5168 18.0543 38.2947 18.8741 37.775C19.5509 37.3455 20.336 37.1174 21.1376 37.1174C21.9392 37.1174 22.7243 37.3455 23.4011 37.775C24.2207 38.2948 25.1941 38.517 26.1581 38.4041C27.122 38.2912 28.0178 37.8502 28.6951 37.155ZM11.0951 19.693C11.13 17.7143 11.7486 15.79 12.8733 14.1617C13.9981 12.5334 15.5787 11.2736 17.417 10.5406C19.2552 9.80748 21.269 9.63377 23.2056 10.0412C25.1422 10.4487 26.9152 11.4192 28.3022 12.8309C29.6891 14.2425 30.6281 16.0325 31.0013 17.976C31.3745 19.9195 31.1653 21.9299 30.3998 23.7549C29.6344 25.5798 28.3469 27.138 26.699 28.2338C25.051 29.3296 23.1161 29.9141 21.1371 29.914C18.45 29.8903 15.8823 28.8001 13.9989 26.8833C12.1155 24.9666 11.0707 22.3802 11.0941 19.693H11.0951Z"
+                                            fill="#1FBEF9" />
+                                    </svg> Award
+                                </span>
+                                <h4 class="text-primary font-bold text-xl mb-2">
+                                    Best Company
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Eligendi, saepe.
+                                </p>
+                            </div>
+                            <div>
+                                <div class="flex gap-3 items-center sm:mb-5 mb-2">
+                                    <span class="flex gap-1 items-center text-[#ECBE26]">
+                                        <svg width="16" height="16" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.57226 1.41104L7.15926 6.30304L1.75926 7.09004C1.54112 7.12215 1.33629 7.21459 1.16789 7.35692C0.999491 7.49925 0.874219 7.68581 0.806211 7.89555C0.738204 8.10529 0.730168 8.32987 0.783008 8.54393C0.835848 8.758 0.947462 8.95304 1.10526 9.10704L5.01026 12.913L4.08626 18.289C4.04934 18.5062 4.07384 18.7294 4.157 18.9333C4.24016 19.1373 4.37866 19.314 4.55688 19.4435C4.73511 19.5729 4.94596 19.65 5.16566 19.666C5.38535 19.682 5.60515 19.6363 5.80026 19.534L10.6293 16.996L15.4583 19.534C15.6534 19.6359 15.8731 19.6813 16.0926 19.6651C16.3121 19.6489 16.5228 19.5718 16.7009 19.4425C16.879 19.3131 17.0175 19.1366 17.1007 18.9328C17.184 18.7291 17.2088 18.5061 17.1723 18.289L16.2493 12.913L20.1543 9.10704C20.312 8.95304 20.4237 8.758 20.4765 8.54393C20.5293 8.32987 20.5213 8.10529 20.4533 7.89555C20.3853 7.68581 20.26 7.49925 20.0916 7.35692C19.9232 7.21459 19.7184 7.12215 19.5003 7.09004L14.1003 6.30304L11.6923 1.41104C11.5944 1.21354 11.4433 1.04731 11.256 0.931094C11.0687 0.814877 10.8527 0.753296 10.6323 0.753296C10.4118 0.753296 10.1958 0.814877 10.0085 0.931094C9.82122 1.04731 9.67012 1.21354 9.57226 1.41104Z"
+                                                fill="#ECBE26" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.57226 1.41104L7.15926 6.30304L1.75926 7.09004C1.54112 7.12215 1.33629 7.21459 1.16789 7.35692C0.999491 7.49925 0.874219 7.68581 0.806211 7.89555C0.738204 8.10529 0.730168 8.32987 0.783008 8.54393C0.835848 8.758 0.947462 8.95304 1.10526 9.10704L5.01026 12.913L4.08626 18.289C4.04934 18.5062 4.07384 18.7294 4.157 18.9333C4.24016 19.1373 4.37866 19.314 4.55688 19.4435C4.73511 19.5729 4.94596 19.65 5.16566 19.666C5.38535 19.682 5.60515 19.6363 5.80026 19.534L10.6293 16.996L15.4583 19.534C15.6534 19.6359 15.8731 19.6813 16.0926 19.6651C16.3121 19.6489 16.5228 19.5718 16.7009 19.4425C16.879 19.3131 17.0175 19.1366 17.1007 18.9328C17.184 18.7291 17.2088 18.5061 17.1723 18.289L16.2493 12.913L20.1543 9.10704C20.312 8.95304 20.4237 8.758 20.4765 8.54393C20.5293 8.32987 20.5213 8.10529 20.4533 7.89555C20.3853 7.68581 20.26 7.49925 20.0916 7.35692C19.9232 7.21459 19.7184 7.12215 19.5003 7.09004L14.1003 6.30304L11.6923 1.41104C11.5944 1.21354 11.4433 1.04731 11.256 0.931094C11.0687 0.814877 10.8527 0.753296 10.6323 0.753296C10.4118 0.753296 10.1958 0.814877 10.0085 0.931094C9.82122 1.04731 9.67012 1.21354 9.57226 1.41104Z"
+                                                fill="#ECBE26" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.57226 1.41104L7.15926 6.30304L1.75926 7.09004C1.54112 7.12215 1.33629 7.21459 1.16789 7.35692C0.999491 7.49925 0.874219 7.68581 0.806211 7.89555C0.738204 8.10529 0.730168 8.32987 0.783008 8.54393C0.835848 8.758 0.947462 8.95304 1.10526 9.10704L5.01026 12.913L4.08626 18.289C4.04934 18.5062 4.07384 18.7294 4.157 18.9333C4.24016 19.1373 4.37866 19.314 4.55688 19.4435C4.73511 19.5729 4.94596 19.65 5.16566 19.666C5.38535 19.682 5.60515 19.6363 5.80026 19.534L10.6293 16.996L15.4583 19.534C15.6534 19.6359 15.8731 19.6813 16.0926 19.6651C16.3121 19.6489 16.5228 19.5718 16.7009 19.4425C16.879 19.3131 17.0175 19.1366 17.1007 18.9328C17.184 18.7291 17.2088 18.5061 17.1723 18.289L16.2493 12.913L20.1543 9.10704C20.312 8.95304 20.4237 8.758 20.4765 8.54393C20.5293 8.32987 20.5213 8.10529 20.4533 7.89555C20.3853 7.68581 20.26 7.49925 20.0916 7.35692C19.9232 7.21459 19.7184 7.12215 19.5003 7.09004L14.1003 6.30304L11.6923 1.41104C11.5944 1.21354 11.4433 1.04731 11.256 0.931094C11.0687 0.814877 10.8527 0.753296 10.6323 0.753296C10.4118 0.753296 10.1958 0.814877 10.0085 0.931094C9.82122 1.04731 9.67012 1.21354 9.57226 1.41104Z"
+                                                fill="#ECBE26" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.57226 1.41104L7.15926 6.30304L1.75926 7.09004C1.54112 7.12215 1.33629 7.21459 1.16789 7.35692C0.999491 7.49925 0.874219 7.68581 0.806211 7.89555C0.738204 8.10529 0.730168 8.32987 0.783008 8.54393C0.835848 8.758 0.947462 8.95304 1.10526 9.10704L5.01026 12.913L4.08626 18.289C4.04934 18.5062 4.07384 18.7294 4.157 18.9333C4.24016 19.1373 4.37866 19.314 4.55688 19.4435C4.73511 19.5729 4.94596 19.65 5.16566 19.666C5.38535 19.682 5.60515 19.6363 5.80026 19.534L10.6293 16.996L15.4583 19.534C15.6534 19.6359 15.8731 19.6813 16.0926 19.6651C16.3121 19.6489 16.5228 19.5718 16.7009 19.4425C16.879 19.3131 17.0175 19.1366 17.1007 18.9328C17.184 18.7291 17.2088 18.5061 17.1723 18.289L16.2493 12.913L20.1543 9.10704C20.312 8.95304 20.4237 8.758 20.4765 8.54393C20.5293 8.32987 20.5213 8.10529 20.4533 7.89555C20.3853 7.68581 20.26 7.49925 20.0916 7.35692C19.9232 7.21459 19.7184 7.12215 19.5003 7.09004L14.1003 6.30304L11.6923 1.41104C11.5944 1.21354 11.4433 1.04731 11.256 0.931094C11.0687 0.814877 10.8527 0.753296 10.6323 0.753296C10.4118 0.753296 10.1958 0.814877 10.0085 0.931094C9.82122 1.04731 9.67012 1.21354 9.57226 1.41104Z"
+                                                fill="#ECBE26" />
+                                        </svg>
+                                        <svg width="16" height="16" viewBox="0 0 21 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.57226 1.41104L7.15926 6.30304L1.75926 7.09004C1.54112 7.12215 1.33629 7.21459 1.16789 7.35692C0.999491 7.49925 0.874219 7.68581 0.806211 7.89555C0.738204 8.10529 0.730168 8.32987 0.783008 8.54393C0.835848 8.758 0.947462 8.95304 1.10526 9.10704L5.01026 12.913L4.08626 18.289C4.04934 18.5062 4.07384 18.7294 4.157 18.9333C4.24016 19.1373 4.37866 19.314 4.55688 19.4435C4.73511 19.5729 4.94596 19.65 5.16566 19.666C5.38535 19.682 5.60515 19.6363 5.80026 19.534L10.6293 16.996L15.4583 19.534C15.6534 19.6359 15.8731 19.6813 16.0926 19.6651C16.3121 19.6489 16.5228 19.5718 16.7009 19.4425C16.879 19.3131 17.0175 19.1366 17.1007 18.9328C17.184 18.7291 17.2088 18.5061 17.1723 18.289L16.2493 12.913L20.1543 9.10704C20.312 8.95304 20.4237 8.758 20.4765 8.54393C20.5293 8.32987 20.5213 8.10529 20.4533 7.89555C20.3853 7.68581 20.26 7.49925 20.0916 7.35692C19.9232 7.21459 19.7184 7.12215 19.5003 7.09004L14.1003 6.30304L11.6923 1.41104C11.5944 1.21354 11.4433 1.04731 11.256 0.931094C11.0687 0.814877 10.8527 0.753296 10.6323 0.753296C10.4118 0.753296 10.1958 0.814877 10.0085 0.931094C9.82122 1.04731 9.67012 1.21354 9.57226 1.41104Z"
+                                                fill="#ECBE26" />
+                                        </svg>
+                                    </span>
+                                    <span>(5020 Reviews)</span>
+                                </div>
+                                <h4 class="text-primary font-bold text-xl mb-2">
+                                    High Rating reviews
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                                    praesentium.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- =========================================
+                     Achievement Area End
+                    ==========================================  -->
+
+
+    </main>
+    <!-- =========================================
+                 Main Area End
+                ==========================================  -->
+
+
+    <!-- =========================================
+             Footer Area Start
+            ==========================================  -->
+    <footer class=" border-t-4 border-[#1FBEF9] ">
+        <div class="container mx-auto md:px-10 px-5">
+            <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-5 items-start py-[50px]">
+
+                <!-- logo  -->
+                <div>
+                    <div>
+                        <h2 class="text-2xl text-[#1FBEF9] font-bold">Power Grid</h2>
+                    </div>
+                    <p class="text-[#707070] ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                        aperiam aspernatur autem, odit modi aut provident quis saepe sit,
+                        dolorum quia. Voluptatem,
+                    </p>
+                </div>
+
+
+                <!-- our services  -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Our service
+                        </h2>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Operation & Maintenance
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Renewable Energy
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Energy Efficiency
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Logistics Services
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Engineering Consulting
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Supply/Trading
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Contact Us
+                        </h2>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            +880100000000
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            yourcompanymailhere@gmail.com
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            House 00, Road 00, Block 0, Florida, United States.
+                        </li>
+
+                    </ul>
+                    <div class="mt-5">
+                        <div class="flex gap-5">
+                            <span class="text-4xl text-[#1FBEF9] cursor-pointer">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.542 0H7.307C6.3473 0.000131313 5.39702 0.189288 4.51043 0.556671C3.62383 0.924054 2.81827 1.46247 2.13976 2.14117C1.46124 2.81987 0.923046 3.62558 0.555906 4.51227C0.188766 5.39897 -0.000131262 6.3493 6.84339e-08 7.309V36.541C-0.000131265 37.5008 0.188799 38.4512 0.556001 39.338C0.923204 40.2247 1.46149 41.0305 2.14011 41.7092C2.81873 42.3879 3.62441 42.9263 4.51112 43.2936C5.39783 43.6609 6.34822 43.85 7.308 43.85H21.929V24.666H16.443V19.184H21.929V15.072C21.929 13.2547 22.6509 11.5119 23.9359 10.2269C25.2209 8.94191 26.9637 8.22 28.781 8.22H35.629V13.701H28.776C28.596 13.701 28.4178 13.7365 28.2515 13.8054C28.0852 13.8743 27.9341 13.9753 27.8069 14.1026C27.6797 14.2299 27.5788 14.3811 27.51 14.5474C27.4412 14.7137 27.4059 14.892 27.406 15.072V19.183H34.943L33.573 24.664H27.406V43.85H36.542C37.5018 43.85 38.4522 43.6609 39.3389 43.2936C40.2256 42.9263 41.0313 42.3879 41.7099 41.7092C42.3885 41.0305 42.9268 40.2247 43.294 39.338C43.6612 38.4512 43.8501 37.5008 43.85 36.541V7.309C43.8501 6.34922 43.6612 5.39881 43.294 4.51204C42.9268 3.62528 42.3885 2.81953 41.7099 2.14082C41.0313 1.4621 40.2256 0.923708 39.3389 0.556384C38.4522 0.18906 37.5018 -8.98559e-09 36.542 0Z"
+                                        fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            <span class="text-4xl text-[#1FBEF9] cursor-pointer">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.484 0.0742188H7.365C5.41347 0.0800222 3.54352 0.857839 2.16357 2.23779C0.78362 3.61774 0.00580347 5.48768 0 7.43922V36.5592C0.00580347 38.5107 0.78362 40.3807 2.16357 41.7606C3.54352 43.1406 5.41347 43.9184 7.365 43.9242H36.484C38.4355 43.9184 40.3055 43.1406 41.6854 41.7606C43.0654 40.3807 43.8432 38.5107 43.849 36.5592V7.43922C43.8432 5.48768 43.0654 3.61774 41.6854 2.23779C40.3055 0.857839 38.4355 0.0800222 36.484 0.0742188ZM16.443 35.7022H10.962V16.5182H16.443V35.7022ZM13.703 13.7772C13.1609 13.7772 12.6309 13.6165 12.1802 13.3153C11.7294 13.0141 11.3781 12.586 11.1706 12.0852C10.9632 11.5843 10.9089 11.0332 11.0147 10.5015C11.1204 9.96977 11.3815 9.48138 11.7648 9.09804C12.1482 8.7147 12.6366 8.45365 13.1683 8.34789C13.7 8.24212 14.2511 8.2964 14.7519 8.50386C15.2528 8.71132 15.6809 9.06265 15.9821 9.5134C16.2832 9.96416 16.444 10.4941 16.444 11.0362C16.444 11.7632 16.1552 12.4604 15.6412 12.9744C15.1271 13.4884 14.43 13.7772 13.703 13.7772ZM35.629 35.7022H30.147V24.7402C30.1333 24.0225 29.8385 23.3387 29.3261 22.836C28.8136 22.3332 28.1244 22.0516 27.4065 22.0516C26.6886 22.0516 25.9994 22.3332 25.4869 22.836C24.9745 23.3387 24.6797 24.0225 24.666 24.7402V35.7022H19.184V16.5182H24.665V19.9182C25.795 18.3652 27.523 16.5182 29.465 16.5182C32.871 16.5182 35.631 19.5862 35.631 23.3702V35.7022H35.629Z"
+                                        fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get in Touch -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Get in Touch
+                        </h2>
+                    </div>
+                    <div class="grid w-[200px] gap-3">
+                        <div class="border-2 border-[#1FBEF9] px-2 py-1 rounded-md">
+                            <input type="email" placeholder="E-mail" class="border-none outline-none bg-transparent " />
+                        </div>
+                        <div>
+                            <button class="px-12 py-2 rounded-md uppercase text-white text-semibold bg-[#1FBEF9]">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- =========================================
+             Footer Area End
+            ==========================================  -->
+
+
+
+
+
+
+    <!-- anime js  -->
+    <script src="../elements/anime-js/anime.min.js"></script>
+
+    <!-- swiper js file import  -->
+    <script src="../elements/swiper-js/swiper.css"></script>
+
+    <!-- main js  -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

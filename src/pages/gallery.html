@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEL || Gallery</title>
+
+
+    <!-- swiper css file import  -->
+    <link rel="stylesheet" href="../elements/swiper-js/swiper.css">
+
+    <!-- font awesome icons css  -->
+    <link rel="stylesheet" href="../elements/fontawesome/css/all.min.css">
+
+    <!-- output or main css  -->
+    <link rel="stylesheet" href="../../dist/output.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+        Cursor animation
+    ==========================================  -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+
+    <!-- =========================================
+         Navbar Area Start
+        ==========================================  -->
+    <div class="bg-[#1FBEF9]  sticky top-0 z-10">
+        <div class="container mx-auto px-5 md:px-10">
+            <nav class="w-full flex justify-between items-center h-[60px]">
+
+                <!-- Menu for large device  -->
+                <div class="hidden lg:block">
+                    <div>
+                        <ul class="flex items-center gap-10">
+                            <li class="lg:hidden">
+                                <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                                    <span
+                                        class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                                stroke="#1FBEF9" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                                        type="search" placeholder="Find services"
+                                        style="background-color: transparent;" />
+                                </div>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="news.html">News</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="sister-concern.html">Sister Concern</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Menu for small device  -->
+                <div class="lg:hidden block">
+                    <div>
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 14.5V16.167C19.9969 16.387 19.9082 16.5971 19.7526 16.7526C19.5971 16.9082 19.387 16.9969 19.167 17H0.833049C0.723675 17.0011 0.615243 16.9798 0.514452 16.9373C0.413661 16.8948 0.322652 16.8321 0.247049 16.753C0.167882 16.6773 0.105109 16.5862 0.0626208 16.4852C0.020133 16.3842 -0.00116424 16.2756 4.9074e-05 16.166V14.5C-0.001027 14.3907 0.0203368 14.2822 0.0628205 14.1814C0.105304 14.0807 0.168005 13.9896 0.247049 13.914C0.322652 13.835 0.413661 13.7723 0.514452 13.7298C0.615243 13.6873 0.723675 13.666 0.833049 13.667H19.167C19.387 13.6701 19.5971 13.7589 19.7526 13.9145C19.9082 14.07 19.9969 14.2801 20 14.5ZM20 7.83305V9.50005C19.9969 9.72001 19.9082 9.93009 19.7526 10.0856C19.5971 10.2412 19.387 10.3299 19.167 10.333H0.833049C0.723675 10.3341 0.615243 10.3128 0.514452 10.2703C0.413661 10.2278 0.322652 10.1651 0.247049 10.086C0.168005 10.0104 0.105304 9.91944 0.0628205 9.81864C0.0203368 9.71785 -0.001027 9.60942 4.9074e-05 9.50005V7.83305C-0.001027 7.72367 0.0203368 7.61524 0.0628205 7.51445C0.105304 7.41366 0.168005 7.32265 0.247049 7.24705C0.322652 7.168 0.413661 7.1053 0.514452 7.06282C0.615243 7.02033 0.723675 6.99897 0.833049 7.00005H19.167C19.387 7.00315 19.5971 7.09191 19.7526 7.24746C19.9082 7.40301 19.9969 7.61309 20 7.83305ZM20 1.16605V2.83305C20.0011 2.94242 19.9798 3.05085 19.9373 3.15164C19.8948 3.25243 19.8321 3.34344 19.753 3.41905C19.6774 3.49809 19.5864 3.56079 19.4856 3.60328C19.3849 3.64576 19.2764 3.66712 19.167 3.66605H0.833049C0.723675 3.66712 0.615243 3.64576 0.514452 3.60328C0.413661 3.56079 0.322652 3.49809 0.247049 3.41905C0.168005 3.34344 0.105304 3.25243 0.0628205 3.15164C0.0203368 3.05085 -0.001027 2.94242 4.9074e-05 2.83305V1.16605C-0.001027 1.05667 0.0203368 0.948241 0.0628205 0.847449C0.105304 0.746658 0.168005 0.655649 0.247049 0.580047C0.322652 0.501003 0.413661 0.438302 0.514452 0.395818C0.615243 0.353334 0.723675 0.33197 0.833049 0.333047H19.167C19.2764 0.33197 19.3849 0.353334 19.4856 0.395818C19.5864 0.438302 19.6774 0.501003 19.753 0.580047C19.8321 0.655649 19.8948 0.746658 19.9373 0.847449C19.9798 0.948241 20.0011 1.05667 20 1.16605Z"
+                                fill="white" />
+                        </svg>
+                        <ul>
+                            <li class="lg:hidden">
+                                <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                                    <span
+                                        class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                                stroke="#1FBEF9" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                                        type="search" placeholder="Find services"
+                                        style="background-color: transparent;" />
+                                </div>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="news.html">News</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="sister-concern.html">Sister Concern</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- search bar  -->
+                <div class="hidden lg:block">
+                    <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                        <span
+                            class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                    stroke="#1FBEF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <input
+                            class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                            type="search" placeholder="Find services" style="background-color: transparent;" />
+                    </div>
+                </div>
+
+                <!-- logo  -->
+                <div class="lg:hidden block">
+                    <div>
+                        <h2 class="text-2xl md:text-primary text-white font-bold">Power Grid</h2>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- =========================================
+                 Navbar Area End
+                ==========================================  -->
+
+
+    <!-- =========================================
+             Main Area Start
+            ==========================================  -->
+    <main>
+
+
+        <!-- =========================================
+             Banner Area Start
+            ==========================================  -->
+        <div style='background: url("../img/banner/about-bg.jpg");'
+            class="min-h-[80vh] flex justify-center items-center bg-no-repeat bg-cover bg-center">
+            <div class="text-center md:w-1/2 w-full text-white mx-auto">
+                <h2 class="font-bold font-karla lg:text-5xl md:text-3xl text-2xl mb-2">
+                    Gallery
+                </h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since</p>
+            </div>
+        </div>
+        <!-- =========================================
+             Banner Area End
+        ==========================================  -->
+
+
+
+        <!-- =========================================
+             Gallery Section Start
+        ==========================================  -->
+        <div class="lg:py-24 py-10">
+            <div class="container mx-auto md:px-10 px-5">
+
+                <div class="grid grid-cols-2 md:grid-cols-3  gap-2 md:gap-3">
+                    <div class="col-span-2">
+                        <div class="w-full lg:h-[400px] md:h-[300px] rounded overflow-hidden">
+                            <img src="../img/gallery/gallery-10.jpg" class="h-full w-full object-cover" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full lg:h-[400px] md:h-[300px] rounded overflow-hidden">
+                            <img src="../img/gallery/gallery-9.jpg" class="h-full w-full object-cover" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full lg:h-[400px] md:h-[300px] rounded overflow-hidden">
+                            <img src="../img/gallery/gallery-8.jpg" class="h-full w-full object-cover" alt="">
+                        </div>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="w-full lg:h-[400px] md:h-[300px] rounded overflow-hidden">
+                            <img src="../img/gallery/gallery-7.jpg" class="h-full w-full object-cover" alt="">
+                        </div>
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="w-full lg:h-[400px] md:h-[300px] rounded overflow-hidden">
+                            <img src="../img/gallery/1000_F_619608622_BcXpdBBx6qYoBaQv8z8wtCmIwtotoCTJ-transformed.jpeg"
+                                class="h-full w-full object-cover" alt="">
+                        </div>
+                    </div>
+                    <div class="hidden lg:block">
+                        <div class="w-full lg:h-[400px] md:h-[300px] rounded overflow-hidden">
+                            <img src="../img/gallery/sunset-sky-powers-wind-solar-energy-generated-by-ai.jpg"
+                                class="h-full w-full object-cover" alt="">
+                        </div>
+                    </div>
+                    <div class="col-span-2 hidden lg:block">
+                        <div class="w-full lg:h-[400px] md:h-[300px] rounded overflow-hidden">
+                            <img src="../img/gallery/1000_F_605250274_DKb8VPDQETuhkjfkcIW6dY1XsRwcHfkH-transformed.jpeg"
+                                class="h-full w-full object-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5 text-center sm:hidden">
+                    <button class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-primary text-white">
+                        View all
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================
+            Gallery Section End
+        ==========================================  -->
+
+
+
+        <!-- =========================================
+             Recent projects area Start
+        ==========================================  -->
+        <div class="lg:py-24 py-10">
+            <div class="container mx-auto md:px-10 px-5">
+                <div class="mb-5">
+                    <div class="my-5 text-center">
+                        <h2
+                            class="md:text-3xl mb-2 text-xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow">
+                            Gallery
+                        </h2>
+                        <div class="h-[2px] w-[100px] mx-auto bg-primary mb-2"></div>
+
+                        <p class="max-w-[500px] mx-auto">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sm:flex sm:justify-center items-center sm:gap-10 mb-10 gap-3 grid grid-cols-2">
+                    <a href="#"
+                        class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-transparent text-primary border border-primary transition-all cursor-pointer">
+                        Solar
+                    </a>
+                    <a href="#"
+                        class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-transparent border hover:text-primary border-primary transition-all cursor-pointer">
+                        Energy
+                    </a>
+                    <a href="#"
+                        class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-transparent border hover:text-primary border-primary transition-all cursor-pointer">
+                        power plant
+                    </a>
+                    <a href="#"
+                        class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-transparent border hover:text-primary border-primary transition-all cursor-pointer">
+                        All
+                    </a>
+                </div>
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 md:gap-10  gap-5">
+                    <div class="w-full">
+                        <div class="mb-2 h-[250px] w-full rounded">
+                            <img src='../img/gallery/gallery-1.jpg' class="rounded w-full h-full object-cover" alt="" />
+                        </div>
+                        <div>
+                            <h2 class="font-titillium font-bold text-lg">Completed Work Title</h2>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="mb-2 h-[250px] w-full rounded">
+                            <img src='../img/gallery/gallery-2.jpg' class="rounded w-full h-full object-cover" alt="" />
+                        </div>
+                        <div>
+                            <h2 class="font-titillium font-bold text-lg">Completed Work Title</h2>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="mb-2 h-[250px] w-full rounded">
+                            <img src='../img/gallery/gallery-3.jpg' class="rounded w-full h-full object-cover" alt="" />
+                        </div>
+                        <div>
+                            <h2 class="font-titillium font-bold text-lg">Completed Work Title</h2>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="mb-2 h-[250px] w-full rounded">
+                            <img src='../img/gallery/gallery-4.jpg' class="rounded w-full h-full object-cover" alt="" />
+                        </div>
+                        <div>
+                            <h2 class="font-titillium font-bold text-lg">Completed Work Title</h2>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="mb-2 h-[250px] w-full rounded">
+                            <img src='../img/gallery/gallery-5.jpg' class="rounded w-full h-full object-cover" alt="" />
+                        </div>
+                        <div>
+                            <h2 class="font-titillium font-bold text-lg">Completed Work Title</h2>
+                        </div>
+                    </div>
+
+                    <div class="w-full">
+                        <div class="mb-2 h-[250px] w-full rounded">
+                            <img src='../img/gallery/gallery-6.jpg' class="rounded w-full h-full object-cover" alt="" />
+                        </div>
+                        <div>
+                            <h2 class="font-titillium font-bold text-lg">Completed Work Title</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- =========================================
+            Recent projects area End
+        ==========================================  -->
+
+
+    </main>
+    <!-- =========================================
+                 Main Area End
+                ==========================================  -->
+
+
+    <!-- =========================================
+             Footer Area Start
+            ==========================================  -->
+    <footer class=" border-t-4 border-[#1FBEF9] ">
+        <div class="container mx-auto md:px-10 px-5">
+            <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-5 items-start py-[50px]">
+
+                <!-- logo  -->
+                <div>
+                    <div>
+                        <h2 class="text-2xl text-[#1FBEF9] font-bold">Power Grid</h2>
+                    </div>
+                    <p class="text-[#707070] ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                        aperiam aspernatur autem, odit modi aut provident quis saepe sit,
+                        dolorum quia. Voluptatem,
+                    </p>
+                </div>
+
+
+                <!-- our services  -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Our service
+                        </h2>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Operation & Maintenance
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Renewable Energy
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Energy Efficiency
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Logistics Services
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Engineering Consulting
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Supply/Trading
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Contact Us
+                        </h2>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            +880100000000
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            yourcompanymailhere@gmail.com
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            House 00, Road 00, Block 0, Florida, United States.
+                        </li>
+
+                    </ul>
+                    <div class="mt-5">
+                        <div class="flex gap-5">
+                            <span class="text-4xl text-[#1FBEF9] cursor-pointer">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.542 0H7.307C6.3473 0.000131313 5.39702 0.189288 4.51043 0.556671C3.62383 0.924054 2.81827 1.46247 2.13976 2.14117C1.46124 2.81987 0.923046 3.62558 0.555906 4.51227C0.188766 5.39897 -0.000131262 6.3493 6.84339e-08 7.309V36.541C-0.000131265 37.5008 0.188799 38.4512 0.556001 39.338C0.923204 40.2247 1.46149 41.0305 2.14011 41.7092C2.81873 42.3879 3.62441 42.9263 4.51112 43.2936C5.39783 43.6609 6.34822 43.85 7.308 43.85H21.929V24.666H16.443V19.184H21.929V15.072C21.929 13.2547 22.6509 11.5119 23.9359 10.2269C25.2209 8.94191 26.9637 8.22 28.781 8.22H35.629V13.701H28.776C28.596 13.701 28.4178 13.7365 28.2515 13.8054C28.0852 13.8743 27.9341 13.9753 27.8069 14.1026C27.6797 14.2299 27.5788 14.3811 27.51 14.5474C27.4412 14.7137 27.4059 14.892 27.406 15.072V19.183H34.943L33.573 24.664H27.406V43.85H36.542C37.5018 43.85 38.4522 43.6609 39.3389 43.2936C40.2256 42.9263 41.0313 42.3879 41.7099 41.7092C42.3885 41.0305 42.9268 40.2247 43.294 39.338C43.6612 38.4512 43.8501 37.5008 43.85 36.541V7.309C43.8501 6.34922 43.6612 5.39881 43.294 4.51204C42.9268 3.62528 42.3885 2.81953 41.7099 2.14082C41.0313 1.4621 40.2256 0.923708 39.3389 0.556384C38.4522 0.18906 37.5018 -8.98559e-09 36.542 0Z"
+                                        fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            <span class="text-4xl text-[#1FBEF9] cursor-pointer">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.484 0.0742188H7.365C5.41347 0.0800222 3.54352 0.857839 2.16357 2.23779C0.78362 3.61774 0.00580347 5.48768 0 7.43922V36.5592C0.00580347 38.5107 0.78362 40.3807 2.16357 41.7606C3.54352 43.1406 5.41347 43.9184 7.365 43.9242H36.484C38.4355 43.9184 40.3055 43.1406 41.6854 41.7606C43.0654 40.3807 43.8432 38.5107 43.849 36.5592V7.43922C43.8432 5.48768 43.0654 3.61774 41.6854 2.23779C40.3055 0.857839 38.4355 0.0800222 36.484 0.0742188ZM16.443 35.7022H10.962V16.5182H16.443V35.7022ZM13.703 13.7772C13.1609 13.7772 12.6309 13.6165 12.1802 13.3153C11.7294 13.0141 11.3781 12.586 11.1706 12.0852C10.9632 11.5843 10.9089 11.0332 11.0147 10.5015C11.1204 9.96977 11.3815 9.48138 11.7648 9.09804C12.1482 8.7147 12.6366 8.45365 13.1683 8.34789C13.7 8.24212 14.2511 8.2964 14.7519 8.50386C15.2528 8.71132 15.6809 9.06265 15.9821 9.5134C16.2832 9.96416 16.444 10.4941 16.444 11.0362C16.444 11.7632 16.1552 12.4604 15.6412 12.9744C15.1271 13.4884 14.43 13.7772 13.703 13.7772ZM35.629 35.7022H30.147V24.7402C30.1333 24.0225 29.8385 23.3387 29.3261 22.836C28.8136 22.3332 28.1244 22.0516 27.4065 22.0516C26.6886 22.0516 25.9994 22.3332 25.4869 22.836C24.9745 23.3387 24.6797 24.0225 24.666 24.7402V35.7022H19.184V16.5182H24.665V19.9182C25.795 18.3652 27.523 16.5182 29.465 16.5182C32.871 16.5182 35.631 19.5862 35.631 23.3702V35.7022H35.629Z"
+                                        fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get in Touch -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Get in Touch
+                        </h2>
+                    </div>
+                    <div class="grid w-[200px] gap-3">
+                        <div class="border-2 border-[#1FBEF9] px-2 py-1 rounded-md">
+                            <input type="email" placeholder="E-mail" class="border-none outline-none bg-transparent " />
+                        </div>
+                        <div>
+                            <button class="px-12 py-2 rounded-md uppercase text-white text-semibold bg-[#1FBEF9]">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- =========================================
+             Footer Area End
+            ==========================================  -->
+
+
+
+
+
+
+    <!-- anime js  -->
+    <script src="../elements/anime-js/anime.min.js"></script>
+
+    <!-- swiper js file import  -->
+    <script src="../elements/swiper-js/swiper.css"></script>
+
+    <!-- main js  -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

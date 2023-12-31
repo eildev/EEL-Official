@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEL || Contact Us</title>
+
+
+    <!-- swiper css file import  -->
+    <link rel="stylesheet" href="../elements/swiper-js/swiper.css">
+
+    <!-- font awesome icons css  -->
+    <link rel="stylesheet" href="../elements/fontawesome/css/all.min.css">
+
+    <!-- output or main css  -->
+    <link rel="stylesheet" href="../../dist/output.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+        Cursor animation
+    ==========================================  -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+
+    <!-- =========================================
+         Navbar Area Start
+        ==========================================  -->
+    <div class="bg-[#1FBEF9]  sticky top-0 z-10">
+        <div class="container mx-auto px-5 md:px-10">
+            <nav class="w-full flex justify-between items-center h-[60px]">
+
+                <!-- Menu for large device  -->
+                <div class="hidden lg:block">
+                    <div>
+                        <ul class="flex items-center gap-10">
+                            <li class="lg:hidden">
+                                <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                                    <span
+                                        class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                                stroke="#1FBEF9" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                                        type="search" placeholder="Find services"
+                                        style="background-color: transparent;" />
+                                </div>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="../index.html">Home</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="news.html">News</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="sister-concern.html">Sister Concern</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Menu for small device  -->
+                <div class="lg:hidden block">
+                    <div>
+                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 14.5V16.167C19.9969 16.387 19.9082 16.5971 19.7526 16.7526C19.5971 16.9082 19.387 16.9969 19.167 17H0.833049C0.723675 17.0011 0.615243 16.9798 0.514452 16.9373C0.413661 16.8948 0.322652 16.8321 0.247049 16.753C0.167882 16.6773 0.105109 16.5862 0.0626208 16.4852C0.020133 16.3842 -0.00116424 16.2756 4.9074e-05 16.166V14.5C-0.001027 14.3907 0.0203368 14.2822 0.0628205 14.1814C0.105304 14.0807 0.168005 13.9896 0.247049 13.914C0.322652 13.835 0.413661 13.7723 0.514452 13.7298C0.615243 13.6873 0.723675 13.666 0.833049 13.667H19.167C19.387 13.6701 19.5971 13.7589 19.7526 13.9145C19.9082 14.07 19.9969 14.2801 20 14.5ZM20 7.83305V9.50005C19.9969 9.72001 19.9082 9.93009 19.7526 10.0856C19.5971 10.2412 19.387 10.3299 19.167 10.333H0.833049C0.723675 10.3341 0.615243 10.3128 0.514452 10.2703C0.413661 10.2278 0.322652 10.1651 0.247049 10.086C0.168005 10.0104 0.105304 9.91944 0.0628205 9.81864C0.0203368 9.71785 -0.001027 9.60942 4.9074e-05 9.50005V7.83305C-0.001027 7.72367 0.0203368 7.61524 0.0628205 7.51445C0.105304 7.41366 0.168005 7.32265 0.247049 7.24705C0.322652 7.168 0.413661 7.1053 0.514452 7.06282C0.615243 7.02033 0.723675 6.99897 0.833049 7.00005H19.167C19.387 7.00315 19.5971 7.09191 19.7526 7.24746C19.9082 7.40301 19.9969 7.61309 20 7.83305ZM20 1.16605V2.83305C20.0011 2.94242 19.9798 3.05085 19.9373 3.15164C19.8948 3.25243 19.8321 3.34344 19.753 3.41905C19.6774 3.49809 19.5864 3.56079 19.4856 3.60328C19.3849 3.64576 19.2764 3.66712 19.167 3.66605H0.833049C0.723675 3.66712 0.615243 3.64576 0.514452 3.60328C0.413661 3.56079 0.322652 3.49809 0.247049 3.41905C0.168005 3.34344 0.105304 3.25243 0.0628205 3.15164C0.0203368 3.05085 -0.001027 2.94242 4.9074e-05 2.83305V1.16605C-0.001027 1.05667 0.0203368 0.948241 0.0628205 0.847449C0.105304 0.746658 0.168005 0.655649 0.247049 0.580047C0.322652 0.501003 0.413661 0.438302 0.514452 0.395818C0.615243 0.353334 0.723675 0.33197 0.833049 0.333047H19.167C19.2764 0.33197 19.3849 0.353334 19.4856 0.395818C19.5864 0.438302 19.6774 0.501003 19.753 0.580047C19.8321 0.655649 19.8948 0.746658 19.9373 0.847449C19.9798 0.948241 20.0011 1.05667 20 1.16605Z"
+                                fill="white" />
+                        </svg>
+                        <ul>
+                            <li class="lg:hidden">
+                                <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                                    <span
+                                        class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                                stroke="#1FBEF9" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                    <input
+                                        class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                                        type="search" placeholder="Find services"
+                                        style="background-color: transparent;" />
+                                </div>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="services.html">Services</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="news.html">News</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="sister-concern.html">Sister Concern</a>
+                            </li>
+                            <li class="text-md uppercase font-semibold text-[#fff]">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- search bar  -->
+                <div class="hidden lg:block">
+                    <div class="flex items-center border-2 bg-transparent border-[#fff] h-8 rounded-md">
+                        <span
+                            class="h-full px-3 text-xl cursor-pointer flex justify-center items-center text-[#1FBEF9] bg-[#fff]">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13.36 7.43C13.36 8.60284 13.0122 9.74935 12.3606 10.7245C11.709 11.6997 10.7829 12.4598 9.69932 12.9086C8.61575 13.3574 7.42342 13.4749 6.27312 13.2461C5.12281 13.0172 4.06619 12.4525 3.23686 11.6231C2.40753 10.7938 1.84276 9.73719 1.61395 8.58689C1.38514 7.43658 1.50257 6.24425 1.9514 5.16069C2.40022 4.07712 3.16029 3.15098 4.13547 2.49939C5.11065 1.84779 6.25716 1.5 7.43 1.5C9.00274 1.5 10.5111 2.12477 11.6231 3.23686C12.7352 4.34895 13.36 5.85727 13.36 7.43Z"
+                                    stroke="#1FBEF9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16.5002 16.5002L11.9482 11.9482" stroke="#1FBEF9" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <input
+                            class="bg-transparent placeholder:text-white placeholder:uppercase placeholder:text-sm border-none outline-none text-[#fff] h-full px-2"
+                            type="search" placeholder="Find services" style="background-color: transparent;" />
+                    </div>
+                </div>
+
+                <!-- logo  -->
+                <div class="lg:hidden block">
+                    <div>
+                        <h2 class="text-2xl md:text-primary text-white font-bold">Power Grid</h2>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- =========================================
+                 Navbar Area End
+                ==========================================  -->
+
+
+    <!-- =========================================
+             Main Area Start
+            ==========================================  -->
+    <main>
+
+
+        <!-- =========================================
+             Get a Quote Area Start
+        ==========================================  -->
+        <div class="lg:py-24 py-10 bg-secondary">
+            <div class="container mx-auto md:px-10 px-5">
+
+                <div class="grid lg:grid-cols-2 gap-20">
+                    <div>
+                        <h2 class="text-primary font-bold  my-3 font-karla text-3xl mb-5">
+                            Get In Touch
+                        </h2>
+                        <p class="mb-5">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+                            officia sequi quibusdam quo, atque necessitatibus.
+                        </p>
+                        <div class="grid gap-5">
+
+                            <div class="flex items-center gap-3">
+                                <div style="padding: 14px;"
+                                    class=" rounded border-2 border-primary p-5 flex justify-center items-center">
+                                    <svg width="20" height="27" viewBox="0 0 20 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.94197 26.073C1.49797 15.284 0.115967 14.173 0.115967 10.21C0.115967 7.60111 1.15236 5.09903 2.99716 3.25424C4.84195 1.40944 7.34403 0.373047 9.95297 0.373047C12.5619 0.373047 15.064 1.40944 16.9088 3.25424C18.7536 5.09903 19.79 7.60111 19.79 10.21C19.79 14.176 18.408 15.284 10.964 26.076C10.8505 26.2392 10.6992 26.3725 10.523 26.4645C10.3468 26.5564 10.1509 26.6043 9.95218 26.604C9.75343 26.6037 9.5577 26.5552 9.38177 26.4628C9.20583 26.3703 9.05493 26.2366 8.94197 26.073ZM9.95297 14.309C10.7639 14.309 11.5566 14.0686 12.2308 13.6181C12.905 13.1676 13.4306 12.5272 13.7409 11.778C14.0512 11.0289 14.1324 10.2045 13.9742 9.40918C13.816 8.61385 13.4255 7.8833 12.8521 7.30991C12.2787 6.73651 11.5482 6.34603 10.7528 6.18783C9.95751 6.02963 9.13314 6.11082 8.38396 6.42114C7.63479 6.73146 6.99446 7.25697 6.54394 7.93121C6.09343 8.60545 5.85297 9.39814 5.85297 10.209C5.85297 11.2964 6.28493 12.3393 7.05383 13.1082C7.82273 13.8771 8.86558 14.309 9.95297 14.309Z"
+                                            fill="#1FBEF9" />
+                                    </svg>
+
+                                </div>
+                                <p class="text-md">House 00, 2nd Floor, Road 00, Block 0, Florida, USA</p>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div style="padding: 14px;"
+                                    class=" rounded border-2 border-primary p-5 flex justify-center items-center">
+                                    <svg width="26" height="19" viewBox="0 0 26 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.7822 6.54605C24.8248 6.51307 24.8757 6.49264 24.9293 6.48706C24.9829 6.48148 25.0369 6.49098 25.0854 6.51448C25.1338 6.53797 25.1747 6.57454 25.2035 6.62005C25.2323 6.66556 25.2478 6.71821 25.2482 6.77206V16.5941C25.2482 17.2056 25.0053 17.7922 24.5728 18.2246C24.1404 18.6571 23.5538 18.9001 22.9422 18.9001H2.96225C2.35083 18.9001 1.76445 18.6572 1.33202 18.225C0.899585 17.7928 0.656515 17.2065 0.65625 16.5951L0.65625 6.77706C0.656872 6.72331 0.672575 6.67082 0.70157 6.62556C0.730564 6.5803 0.771686 6.5441 0.82025 6.52107C0.868815 6.49804 0.922872 6.4891 0.976264 6.49529C1.02966 6.50147 1.08024 6.52253 1.12225 6.55606C2.19825 7.39206 3.62225 8.45606 8.52225 12.0121C9.53525 12.7521 11.2452 14.3121 12.9513 14.2981C14.6663 14.3121 16.4093 12.7231 17.3843 12.0121C22.2853 8.44806 23.7062 7.38205 24.7822 6.54605ZM12.9563 12.7561C14.0703 12.7751 15.6753 11.3561 16.4823 10.7671C22.8563 6.14206 23.3413 5.73806 24.8113 4.58506C24.9492 4.47737 25.0608 4.33959 25.1374 4.18222C25.214 4.02486 25.2536 3.85208 25.2533 3.67706V2.76406C25.2535 2.46072 25.1939 2.16032 25.0779 1.88005C24.9619 1.59979 24.7917 1.34516 24.5771 1.13076C24.3626 0.916367 24.1078 0.746411 23.8274 0.630634C23.547 0.514857 23.2466 0.455532 22.9433 0.456058H2.96225C2.35066 0.456058 1.76412 0.699014 1.33166 1.13147C0.899203 1.56393 0.65625 2.15047 0.65625 2.76206L0.65625 3.67506C0.656423 3.84999 0.696293 4.02259 0.772855 4.17987C0.849418 4.33716 0.960677 4.47501 1.09825 4.58306C2.56825 5.73106 3.05325 6.13906 9.42725 10.7651C10.2343 11.3511 11.8383 12.7731 12.9532 12.7531L12.9563 12.7561Z"
+                                            fill="#1FBEF9" />
+                                    </svg>
+
+                                </div>
+                                <p class="text-md">yourcompanymail@gmail.com</p>
+                            </div>
+
+                            <div class="flex items-center gap-3">
+                                <div style="padding: 14px;"
+                                    class=" rounded border-2 border-primary p-5 flex justify-center items-center">
+                                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.355 1.96709L19.355 0.814085C19.0915 0.754105 18.8153 0.788024 18.5741 0.909984C18.3329 1.03194 18.1419 1.23429 18.034 1.48208L15.728 6.86208C15.6302 7.09241 15.6102 7.34836 15.671 7.59109C15.7318 7.83382 15.8702 8.05009 16.065 8.20708L18.975 10.5891C17.2119 14.3266 14.2032 17.3343 10.465 19.0961L8.08101 16.1901C7.92304 15.9965 7.70642 15.8596 7.46381 15.7999C7.22121 15.7402 6.96577 15.7609 6.73601 15.8591L1.35601 18.1641C1.10733 18.2725 0.904206 18.4642 0.781564 18.7062C0.658922 18.9482 0.624428 19.2254 0.684011 19.4901L1.83701 24.4901C1.89564 24.7442 2.03874 24.9709 2.24291 25.1331C2.44708 25.2953 2.70025 25.3834 2.96101 25.3831C5.88786 25.3833 8.78609 24.8071 11.4902 23.6871C14.1943 22.5672 16.6513 20.9256 18.7209 18.856C20.7905 16.7864 22.4321 14.3294 23.552 11.6253C24.672 8.92116 25.2483 6.02293 25.248 3.09608C25.2497 2.83442 25.1621 2.58 24.9998 2.37476C24.8374 2.16953 24.61 2.02573 24.355 1.96709Z"
+                                            fill="#1FBEF9" />
+                                    </svg>
+
+                                </div>
+                                <p class="text-md">+88010000000</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="grid grid-cols-2 gap-5 mb-5  w-full">
+                            <input
+                                class="border-2 border-primary outline-none text-sm rounded bg-transparent px-2  pb-2 placeholder:font-karla w-full"
+                                placeholder="Full Name" type="text" />
+                            <input
+                                class="border-2 border-primary outline-none text-sm rounded bg-transparent px-2  pb-2 placeholder:font-karla w-full"
+                                placeholder="Email" type="email" />
+                            <input
+                                class="border-2 border-primary outline-none text-sm rounded bg-transparent px-2  pb-2 placeholder:font-karla w-full"
+                                placeholder="Phone Number" type="text" />
+                            <select
+                                class="bg-transparent border-2 focus:ring-primary focus:border-primary outline-none   border-primary text-sm rounded px-2 pb-2 placeholder:font-karla w-full">
+                                <option selected>Choose a country</option>
+                                <option value="US">United States</option>
+                                <option value="CA">Canada</option>
+                                <option value="FR">France</option>
+                                <option value="DE">Germany</option>
+                            </select>
+
+                            <textarea placeholder="Message"
+                                class="bg-transparent border-2 focus:ring-primary focus:border-primary resize-none outline-none  border-primary text-sm rounded px-2 pt-2 placeholder:font-karla h-[150px] w-full col-span-2"></textarea>
+                        </div>
+                        <div class="mt-4">
+
+                            <button
+                                class="px-7 py-2 font-bold text-sm uppercase font-karla rounded bg-transparent text-primary border border-primary">
+                                submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- =========================================
+            Get a Quote Area End
+        ==========================================  -->
+
+
+
+        <!-- =========================================
+             Map Area Start
+        ==========================================  -->
+        <div class="lg:py-24 py-10 my-10 bg-white">
+            <div class="container mx-auto md:px-10 px-5">
+
+                <div class="w-full h-full">
+                    <img src="img/map/map.png" class="object-cover h-full" alt="" />
+                </div>
+
+            </div>
+        </div>
+        <!-- =========================================
+            Map Area End
+        ==========================================  -->
+
+
+
+        <!-- =========================================
+             Frequently Asked Questions Area Start
+        ==========================================  -->
+        <div class="lg:py-24 py-10 my-10 bg-white">
+            <div class="container mx-auto md:px-10 px-5">
+
+
+                <h2 class="text-primary font-bold  my-3 font-karla text-center text-3xl">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos nihil
+                    optio sed animi officia consequuntur.
+                </p>
+                <div class="text-center w-[300px] mx-auto mt-7 h-[2px] bg-primary"></div>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header text-primary">
+                            <h2 class=" text-2xl font-bold">Questions Subject </h2>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+                                consequuntur tempora
+                                doloribus, sapiente iusto aliquam eveniet perferendis quod placeat magnam eum quasi
+                                sequi ipsa numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+                                nisi ducimus vitae alias impedit corporis nulla dolorem cum obcaecati quam. Vitae atque
+                                quis odio aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header text-primary">
+                            <h2 class=" text-2xl font-bold">Questions Subject </h2>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+                                consequuntur tempora
+                                doloribus, sapiente iusto aliquam eveniet perferendis quod placeat magnam eum quasi
+                                sequi ipsa numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+                                nisi ducimus vitae alias impedit corporis nulla dolorem cum obcaecati quam. Vitae atque
+                                quis odio aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header text-primary">
+                            <h2 class=" text-2xl font-bold">Questions Subject </h2>
+                            <span><i class="fa-solid fa-chevron-down"></i></span>
+                        </div>
+                        <div class="accordion-content">
+                            <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum
+                                consequuntur tempora
+                                doloribus, sapiente iusto aliquam eveniet perferendis quod placeat magnam eum quasi
+                                sequi ipsa numquam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+                                nisi ducimus vitae alias impedit corporis nulla dolorem cum obcaecati quam. Vitae atque
+                                quis odio aspernatur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- =========================================
+            Frequently Asked Questions Area End
+        ==========================================  -->
+
+
+    </main>
+    <!-- =========================================
+                 Main Area End
+                ==========================================  -->
+
+
+    <!-- =========================================
+             Footer Area Start
+            ==========================================  -->
+    <footer class=" border-t-4 border-[#1FBEF9] ">
+        <div class="container mx-auto md:px-10 px-5">
+            <div class="grid xl:grid-cols-4 md:grid-cols-2 gap-5 items-start py-[50px]">
+
+                <!-- logo  -->
+                <div>
+                    <div>
+                        <h2 class="text-2xl text-[#1FBEF9] font-bold">Power Grid</h2>
+                    </div>
+                    <p class="text-[#707070] ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                        aperiam aspernatur autem, odit modi aut provident quis saepe sit,
+                        dolorum quia. Voluptatem,
+                    </p>
+                </div>
+
+
+                <!-- our services  -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Our service
+                        </h2>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Operation & Maintenance
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Renewable Energy
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Energy Efficiency
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Logistics Services
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Engineering Consulting
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            Supply/Trading
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Contact Us
+                        </h2>
+                    </div>
+                    <ul class="grid gap-2">
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            +880100000000
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            yourcompanymailhere@gmail.com
+                        </li>
+                        <li class="flex items-center gap-1">
+                            <span class="text-[#1FBEF9] text-xl">
+                                <svg width="7" height="14" viewBox="0 0 7 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.000976562L7 7.00098L0 14.001L0 0.000976562Z" fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            House 00, Road 00, Block 0, Florida, United States.
+                        </li>
+
+                    </ul>
+                    <div class="mt-5">
+                        <div class="flex gap-5">
+                            <span class="text-4xl text-[#1FBEF9] cursor-pointer">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.542 0H7.307C6.3473 0.000131313 5.39702 0.189288 4.51043 0.556671C3.62383 0.924054 2.81827 1.46247 2.13976 2.14117C1.46124 2.81987 0.923046 3.62558 0.555906 4.51227C0.188766 5.39897 -0.000131262 6.3493 6.84339e-08 7.309V36.541C-0.000131265 37.5008 0.188799 38.4512 0.556001 39.338C0.923204 40.2247 1.46149 41.0305 2.14011 41.7092C2.81873 42.3879 3.62441 42.9263 4.51112 43.2936C5.39783 43.6609 6.34822 43.85 7.308 43.85H21.929V24.666H16.443V19.184H21.929V15.072C21.929 13.2547 22.6509 11.5119 23.9359 10.2269C25.2209 8.94191 26.9637 8.22 28.781 8.22H35.629V13.701H28.776C28.596 13.701 28.4178 13.7365 28.2515 13.8054C28.0852 13.8743 27.9341 13.9753 27.8069 14.1026C27.6797 14.2299 27.5788 14.3811 27.51 14.5474C27.4412 14.7137 27.4059 14.892 27.406 15.072V19.183H34.943L33.573 24.664H27.406V43.85H36.542C37.5018 43.85 38.4522 43.6609 39.3389 43.2936C40.2256 42.9263 41.0313 42.3879 41.7099 41.7092C42.3885 41.0305 42.9268 40.2247 43.294 39.338C43.6612 38.4512 43.8501 37.5008 43.85 36.541V7.309C43.8501 6.34922 43.6612 5.39881 43.294 4.51204C42.9268 3.62528 42.3885 2.81953 41.7099 2.14082C41.0313 1.4621 40.2256 0.923708 39.3389 0.556384C38.4522 0.18906 37.5018 -8.98559e-09 36.542 0Z"
+                                        fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                            <span class="text-4xl text-[#1FBEF9] cursor-pointer">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M36.484 0.0742188H7.365C5.41347 0.0800222 3.54352 0.857839 2.16357 2.23779C0.78362 3.61774 0.00580347 5.48768 0 7.43922V36.5592C0.00580347 38.5107 0.78362 40.3807 2.16357 41.7606C3.54352 43.1406 5.41347 43.9184 7.365 43.9242H36.484C38.4355 43.9184 40.3055 43.1406 41.6854 41.7606C43.0654 40.3807 43.8432 38.5107 43.849 36.5592V7.43922C43.8432 5.48768 43.0654 3.61774 41.6854 2.23779C40.3055 0.857839 38.4355 0.0800222 36.484 0.0742188ZM16.443 35.7022H10.962V16.5182H16.443V35.7022ZM13.703 13.7772C13.1609 13.7772 12.6309 13.6165 12.1802 13.3153C11.7294 13.0141 11.3781 12.586 11.1706 12.0852C10.9632 11.5843 10.9089 11.0332 11.0147 10.5015C11.1204 9.96977 11.3815 9.48138 11.7648 9.09804C12.1482 8.7147 12.6366 8.45365 13.1683 8.34789C13.7 8.24212 14.2511 8.2964 14.7519 8.50386C15.2528 8.71132 15.6809 9.06265 15.9821 9.5134C16.2832 9.96416 16.444 10.4941 16.444 11.0362C16.444 11.7632 16.1552 12.4604 15.6412 12.9744C15.1271 13.4884 14.43 13.7772 13.703 13.7772ZM35.629 35.7022H30.147V24.7402C30.1333 24.0225 29.8385 23.3387 29.3261 22.836C28.8136 22.3332 28.1244 22.0516 27.4065 22.0516C26.6886 22.0516 25.9994 22.3332 25.4869 22.836C24.9745 23.3387 24.6797 24.0225 24.666 24.7402V35.7022H19.184V16.5182H24.665V19.9182C25.795 18.3652 27.523 16.5182 29.465 16.5182C32.871 16.5182 35.631 19.5862 35.631 23.3702V35.7022H35.629Z"
+                                        fill="#1FBEF9" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Get in Touch -->
+                <div>
+                    <div class="mb-5">
+                        <h2 class="text-2xl font-bold text-[#1FBEF9]">
+                            Get in Touch
+                        </h2>
+                    </div>
+                    <div class="grid w-[200px] gap-3">
+                        <div class="border-2 border-[#1FBEF9] px-2 py-1 rounded-md">
+                            <input type="email" placeholder="E-mail" class="border-none outline-none bg-transparent " />
+                        </div>
+                        <div>
+                            <button class="px-12 py-2 rounded-md uppercase text-white text-semibold bg-[#1FBEF9]">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- =========================================
+             Footer Area End
+            ==========================================  -->
+
+
+
+
+
+
+    <!-- anime js  -->
+    <script src="../elements/anime-js/anime.min.js"></script>
+
+    <!-- swiper js file import  -->
+    <script src="../elements/swiper-js/swiper.css"></script>
+
+    <!-- main js  -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
